@@ -3,3 +3,30 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+
+body{
+    background-color: red;
+}
+main{
+    display: flex;
+}
+
+.col-sx{
+    width: 14.375rem;
+    background-color: black;
+    height: 100vh;
+    color: white;
+}
+
+@media screen and (max-width:552px) {
+    .col-sx{
+        width: 3.125rem;
+    }
+}
+
+.navbar{
+    height: 5.625rem;
+    background-color: blue;
+    width: calc(100% - 14.375rem);
+}
