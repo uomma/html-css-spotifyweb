@@ -15,7 +15,7 @@ main{
 .col-sx{
     width: 14.375rem;
     background-color: black;
-    height: 100vh;
+    height: calc(100vh - 5.625rem  );
     color: white;
 }
 
@@ -27,6 +27,53 @@ main{
 
 .navbar{
     height: 5.625rem;
-    background-color: blue;
-    width: calc(100% - 14.375rem);
+    background-color: lightgray;
+    width: calc(100vw - 14.375rem );
+    position: fixed;
+    opacity: 0.5;
+}
+
+@media screen and (max-width:552px) {
+    .navbar{
+        width: calc(100vw - 3.125rem );
+    }
+}
+
+
+.menu{
+    margin-top: 5.625rem;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: calc(100vw - 14.375rem );
+    padding-bottom: 1.25rem;
+}
+
+.six-blocks{
+    width: calc(100% /6);
+    background-color: aqua;
+    display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    height: 5.625rem ;
+    width: 100vw;
+    background-color: green;
 }
