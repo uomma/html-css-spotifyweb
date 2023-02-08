@@ -7,6 +7,7 @@
 
 body{
     background-color: red;
+    font-family: 'Montserrat', sans-serif;
 }
 main{
     display: flex;
@@ -17,6 +18,8 @@ main{
     background-color: black;
     height: calc(100vh - 5.625rem  );
     color: white;
+    padding-left: 1.25rem;
+    font-size: 0.8125rem;
 }
 
 @media screen and (max-width:552px) {
@@ -24,12 +27,69 @@ main{
         width: 3.125rem;
     }
 }
+.logo{
+    padding: 1.25rem 5rem 1.25rem 0rem;
+}
+@media screen and (max-width:552px){
+    .logo{display: none;}
+    
+}
+.cerca > li{
+    list-style: none;
+    padding-bottom:0.625rem ;
+}
+.cerca > li > .fa-solid{
+    padding-right: 0.1875rem;
+}
+.name{
+    padding-bottom: 0.9375rem;
+    font-weight: bolder;
+}
+.plus{
+    background-color: gray;
+    padding:0.5rem;
+}
+.own-playlists{
+    list-style: none;
+    padding-top: 0.9375rem;
+}
 
+.own-playlists > li{
+    padding-top: 0.3125rem;
+}
+
+.bottom{
+    display:flex ;
+    flex-direction: column;
+    align-content: space-between;
+    padding-right: 1.25rem;
+    list-style: none;
+  
+}
+
+
+
+
+
+
+
+
+.col-dx{
+    width: calc(100vw - 14.375rem );
+background-color: yellow;
+}
+
+@media screen and (max-width:552px) {
+    .col-dx{
+        width: calc(100vw - 3.125rem );
+    background-color: yellow;
+    }
+}
 .navbar{
     height: 5.625rem;
     background-color: lightgray;
-    width: calc(100vw - 14.375rem );
     position: fixed;
+    width: calc(100vw - 14.375rem );
     opacity: 0.5;
 }
 
@@ -47,12 +107,34 @@ main{
     align-items: center;
     width: calc(100vw - 14.375rem );
     padding-bottom: 1.25rem;
+    list-style: none;
+}
+.six-blocks{
+    display: flex;
+}
+.container{
+    width: calc(100% /6 );
+    height: 10.9375rem;
+    padding: 0.9375rem 0.9375rem; 
+    background-color:aqua;
+    border: 1px solid red;
+    display: flex;
+    justify-content:center;
+    align-items: center;
 }
 
-.six-blocks{
-    width: calc(100% /6);
-    background-color: aqua;
-    display: flex;
+
+@media screen and (min-width:878px) {
+    .six-blocks{
+        overflow: auto;
+
+    }
+}  
+
+.box > img{
+    width: 100%;
+    height: calc(10.9375rem - 0.9375rem - 0.9375rem );
+    display: block;
 }
 
 
